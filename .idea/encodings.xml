@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/activation.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/css/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/database.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/edit_user.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/filters/auth_filters.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/includes/constants.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/includes/functions.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/includes/init.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libaries/uploadify/uploadify.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/list_users.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locales/long_text.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locales/memus.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micropost.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_errors.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_flash.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_footer.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_header.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_micropost.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_nav.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/profile.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/register.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/share_code.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/emails/activation.tmpl.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/edit_user.views.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/index.veiws.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/login.views.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/profile.views.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/register.views.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/share_code.views.php" charset="UTF-8" />
+  </component>
+</project>
