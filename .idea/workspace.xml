@@ -82,8 +82,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06427221">
-              <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -490,7 +490,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457001307681</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modification du readme">
+      <created>1457001501816</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1457001501816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,7 +539,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout des fonction pour le remember me si le user fermeson navigateur sans se deconnecter pourqu'il puisse etre connecter automatiquement" />
     <MESSAGE value="ajout de la suppression du token en base de donnee bdd pour eviter une reconnexion auto apres deconnexion :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la suppression du token en base de donnee bdd pour eviter une reconnexion auto apres deconnexion :)" />
+    <MESSAGE value="modification du readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification du readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06427221">
-          <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
