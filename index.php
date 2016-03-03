@@ -5,12 +5,6 @@ session_start();
 require ("includes/init.php");
 //filtrage des invites
   include "filters/auth_filters.php";
-//chargement des fonctions
-  require ("includes/functions.php");
-//chargement du multilangue
-  require ("bootstrap/locale.php");
-
-
 
 //chargement de la vue
   require ("views/index.veiws.php");

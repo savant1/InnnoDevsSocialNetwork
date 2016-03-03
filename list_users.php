@@ -2,14 +2,6 @@
 session_start();
 //chargement de la connection auto
 require ("includes/init.php");
-//importation de la connexion a la bd
-require ("config/database.php");
-//importation des functions
-require ("includes/functions.php");
-//importation des constantes
-require('includes/constants.php');
-//import des langues
-require ("bootstrap/locale.php");
 
 //afichage dela pagination
 $req = $db->query("SELECT id FROM users WHERE active = '1' ");

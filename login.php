@@ -5,14 +5,6 @@ session_start();
 require ("includes/init.php");
 //filtrage des invites
 include "filters/guest_filters.php";
-//connexion a la base de donnee
-require('config/database.php');
-//importation de la bibliotheques qui va exceuter nos functions
-require('includes/functions.php');
-//importation des constantes
-require('includes/constants.php');
-//import des langues
-require ("bootstrap/locale.php");
 
 // si le formulaire est soumis
 
@@ -39,11 +31,8 @@ if(isset($_POST['login'])){
             $_SESSION['email'] = $user->email;
                 // garder la session de l'utilisateur active
             if(isset($_POST['remember_me']) && $_POST['remember_me'] == 'on'){
-                setcookie('pseudo',$user->pseudo,time()+3600*25*365,null,null,false,true);
-                setcookie('user_id',$user->user_id,time()+3600*25*365,null,null,false,true);
-                setcookie('avatar',$user->avatar,time()+3600*25*365,null,null,false,true);
+                remember_me($_SESSION['user_id']);
             }
-
             redirect_intent_or('profile.php?id='.$user->id);
         } else{
             set_flash("Combinaison identifiant / mot de passe invalide .Merci de verifier que votre compte soit activer (:- ", "danger");

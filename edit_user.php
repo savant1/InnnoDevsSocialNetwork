@@ -4,14 +4,6 @@ session_start();
 require ("includes/init.php");
 //importation des filtres
 include "filters/auth_filters.php";
-//importation de la connexion a la bd
-require ("config/database.php");
-//importation des functions
-require ("includes/functions.php");
-//importation des constantes
-require('includes/constants.php');
-//import des langues
-require ("bootstrap/locale.php");
 
 if(!empty($_GET['id']) && $_GET['id'] === get_session('user_id') ){
     //recuperons les infos du user grace a son id

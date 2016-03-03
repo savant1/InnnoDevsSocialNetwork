@@ -1,10 +1,9 @@
 <?php
     session_start();
     //filtrage des invites
+    require "includes/init.php";
     include "filters/guest_filters.php";
-    require "config/database.php";
-    require "includes/functions.php";
-    require ("bootstrap/locale.php");
+
     if(!empty($_GET['p']) && is_already_in_use('pseudo',$_GET['p'],'users') && !empty($_GET['token'])){
         $pseudo = $_GET['p'];
         $token = $_GET['token'];

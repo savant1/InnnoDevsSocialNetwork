@@ -181,3 +181,86 @@
         redirect($url);
     }
   }
+
+//fonction qui va nous retourner les selecteurs existant en retournant le nombre de selecteur trouve
+if(!function_exists('cell_count')){
+    function cell_count($table,$field_name,$field_values){
+        global $db;
+
+        $q = $db->prepare("SELECT * FROM $table WHERE $field_name = ?");
+        $q->execute([$field_values]);
+
+        return $q->rowCount();
+    }
+}
+
+// Remember me
+if(!function_exists('remember_me')){
+    function remember_me($user_id){
+        global $db;
+        //generation aleatoire du token
+        $token = openssl_random_pseudo_bytes(24);
+
+        //generation du selecteur de facon aleatoire et unique
+        do{
+            $selector = openssl_random_pseudo_bytes(9);
+        } while (cell_count('auth_tokens','selector',$selector) > 0 );
+
+        //enregistrement des infos en base de donnee
+        $q = $db->prepare("INSERT INTO auth_tokens (selector, expires, user_id, token)
+                           VALUES (:selector, DATE_ADD(NOW(),INTERVAL 14 DAY ) , :user_id, :token) ");
+        $q->execute([
+            'selector' => $selector,
+            'user_id' => $user_id,
+            'token' => hash('sha256',$token)
+        ]);
+
+        // ceration d'un cookies de securite qui expire apres 14 jours soit 2 semaines
+        setcookie(
+                    'auth',
+                    base64_encode($selector).':'.base64_encode($token),
+                    time()+ 1209600 ,
+                    null,
+                    null,
+                    false,
+                    true
+        );
+    }
+}
+
+// Auto Login
+if(!function_exists('auto_login')){
+    function auto_login(){
+        global $db;
+        //verification de l'existance du cookies
+        if(!empty($_COOKIE['auth'])){
+            //separation des elements selector et token
+            $split = explode(':' ,$_COOKIE['auth']);
+            if(count($split) != 2){
+                return false;
+            }
+            //recuperation du selector et du token via le cookie
+            list($selector,$token) = $split;
+            $q = $db->prepare("SELECT auth_tokens.token,auth_tokens.user_id  , users.id , users.pseudo , users.avatar, users.email
+                               FROM auth_tokens
+                               LEFT JOIN users
+                               ON auth_tokens.user_id = users.id
+                               WHERE selector = ?
+                               AND expires >= CURDATE() ");
+            $q->execute([base64_decode($selector)]);
+            $data = $q->fetch(PDO::FETCH_OBJ);
+            if($data){
+                //comparaison des tokens
+                if(hash_equals($data->token,hash('sha256',base64_decode($token)))){
+                      session_regenerate_id(true);
+                    $_SESSION['user_id'] = $data->user_id;
+                    $_SESSION['pseudo'] = $data->pseudo;
+                    $_SESSION['avatar'] = $data->avatar;
+                    $_SESSION['email'] = $data->email;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}

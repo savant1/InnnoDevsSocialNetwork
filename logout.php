@@ -7,13 +7,18 @@
  */
 
     session_start();
+
+    require ('config/database.php');
+        $q = $db->prepare("DELETE FROM auth_tokens WHERE user_id = ?");
+        $q->execute([
+                $_SESSION['user_id']
+        ]);
+
+    setcookie('auth','',time()-3600*25*365);
+
     session_destroy();
 
     $_SESSION = [];
-
-    setcookie('pseudo','',time()-3600*25*365);
-    setcookie('user_id','',time()-3600*25*365);
-    setcookie('avatar','',time()-3600*25*365);
 
     header('Location:login.php');
     exit();
