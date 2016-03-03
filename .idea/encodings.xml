@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/activation.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/css/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/change_password.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/database.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/edit_user.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/filters/auth_filters.php" charset="UTF-8" />
@@ -15,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/locales/long_text.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/locales/memus.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logout.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micropost.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/_errors.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/_flash.php" charset="UTF-8" />
@@ -26,6 +28,7 @@
     <file url="file://$PROJECT_DIR$/register.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/share_code.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/templates/emails/activation.tmpl.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/change_password.view.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/edit_user.views.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/index.veiws.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/views/login.views.php" charset="UTF-8" />

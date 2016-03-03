@@ -23,14 +23,17 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <img src="<?= get_session('avatar') ? get_session('avatar') : get_avatar_url(get_session('email'),$size = 25) ?>"
                                  alt="Image de profil de <?= get_session('pseudo') ?>" class="img-circle avatar-xs">
-                            <!--
-                            <img src="<?= $user->avatar ? $user->avatar : get_avatar_url($user->email,$size=25) ?>" alt="Image de profil de <?= e($user->pseudo) ?>" class="img-circle"><br>-->
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="<?= set_active('profile') ?> ">
                                 <a href="profile.php?id=<?=get_session('user_id')?>">
                                     <?= $menu['mon profile'][$_SESSION['locale']]; ?>
+                                </a>
+                            </li>
+                            <li class="<?= set_active('change_password') ?> ">
+                                <a href="change_password.php">
+                                    <?= $menu['change_password'][$_SESSION['locale']]; ?>
                                 </a>
                             </li>
                             <li class="<?= set_active('edit_user') ?> ">
@@ -50,10 +53,10 @@
                     <li class="<?= set_active('register') ?> "><a href="register.php"><?= $menu['inscription'][$_SESSION['locale']]; ?></a></li>
                 <?php endif?>
                 <ul class="nav navbar-nav navbar-right" style="padding-top: 10px">
-                    <a href="?lang=fr"> <img src="locales/img/france.PNG" alt="" width="20px" height="20px"></a>
-                    <a href="?lang=en"> <img src="locales/img/angleterre.PNG" alt="" width="20px" height="20px"></a>
-                    <a href="?lang=es"> <img src="locales/img/espagnol.PNG" alt="" width="20px" height="20px"></a>
-                    <a href="?lang=all"> <img src="locales/img/allemand.PNG" alt="" width="20px" height="20px"></a>
+                    <a href="?lang=fr"> <img src="img/france.PNG" alt="" width="20px" height="20px"></a>
+                    <a href="?lang=en"> <img src="img/angleterre.PNG" alt="" width="20px" height="20px"></a>
+                    <a href="?lang=es"> <img src="img/espagnol.PNG" alt="" width="20px" height="20px"></a>
+                    <a href="?lang=all"> <img src="img/allemand.PNG" alt="" width="20px" height="20px"></a>
                 </ul>
             </ul>
         </div><!--/.nav-collapse -->

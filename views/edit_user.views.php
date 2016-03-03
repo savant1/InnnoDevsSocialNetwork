@@ -153,7 +153,7 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
         .livequery(function(){
             $("span.timeago").timeago();
     });
-   // window.ParsleyValidator.setLocale('fr');
+    window.ParsleyValidator.setLocale('fr');
 </script>
 
 </body>

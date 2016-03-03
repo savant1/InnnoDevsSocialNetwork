@@ -26,6 +26,7 @@ $long_texte = [
                                        Gemeinschaft </a>  teilnehmen '],
 
     'cree_un_compte' => ['fr' => 'Creer un compte' , 'en' => 'Create an account' , 'es' =>'Crear una cuenta' , 'all' => 'Erstellen Sie ein Konto'],
+    'no_micropost' => ['fr' => 'cet utilisateur n\'a encore rien poster pour le moment ...' , 'en' => 'This user has posting anything at the moment ...' , 'es' =>'Este usuario ha publicar nada en este momento ...' , 'all' => 'Dieser Benutzer hat im Moment der Veröffentlichung etwas ...'],
     'devenez_membre' => ['fr' => 'devenez des a present membres' , 'en' => 'Has become of this member' , 'es' =>'Se ha convertido de este miembro' , 'all' => 'Hat dieses Mitglied werden'],
 
 ];

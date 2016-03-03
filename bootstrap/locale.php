@@ -9,6 +9,8 @@
             $_SESSION['locale'] = $autorize_languages[0];
         }
     }
-
-    require 'locales/memus.php';
-    require 'locales/long_text.php';
+    //inclusion des fichiers pour l'internationnalisation
+    $locales_files = glob("locales/*");
+        foreach($locales_files AS $file){
+            require $file;
+        }

@@ -8,6 +8,6 @@
             <i class="fa fa-clock-o"> &nbsp;<span class="timeago" title=" <?= $micropost->created_at ?> "> <?= $micropost->created_at; ?> </span>
             </i>
         </p>
-        <?= nl2br(e($micropost->content)); ?>
+        <?= nl2br(replace_links(e($micropost->content))); ?>
     </div>
 </article>

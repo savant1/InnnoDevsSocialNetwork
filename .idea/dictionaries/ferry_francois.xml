@@ -3,10 +3,13 @@
     <words>
       <w>actif</w>
       <w>activer</w>
+      <w>actuel</w>
       <w>adresse</w>
       <w>affichage</w>
+      <w>ajouter</w>
       <w>aleatoire</w>
       <w>alors</w>
+      <w>amis</w>
       <w>apres</w>
       <w>awesone</w>
       <w>bcrypt</w>
@@ -19,11 +22,14 @@
       <w>ceration</w>
       <w>chemin</w>
       <w>colonne</w>
+      <w>comparaison</w>
       <w>compte</w>
+      <w>concordent</w>
       <w>contient</w>
       <w>deconnexion</w>
       <w>dernier</w>
       <w>detecte</w>
+      <w>deux</w>
       <w>developpeur</w>
       <w>donc</w>
       <w>donnee</w>
@@ -34,6 +40,7 @@
       <w>envoyer</w>
       <w>erreur</w>
       <w>erreurs</w>
+      <w>etre</w>
       <w>existant</w>
       <w>facon</w>
       <w>faire</w>
@@ -51,6 +58,7 @@
       <w>invalide</w>
       <w>jeton</w>
       <w>jours</w>
+      <w>langues</w>
       <w>libaries</w>
       <w>loguez</w>
       <w>lors</w>
@@ -65,14 +73,19 @@
       <w>parcourir</w>
       <w>passwor</w>
       <w>permet</w>
+      <w>peut</w>
       <w>pleins</w>
+      <w>plutard</w>
       <w>profil</w>
+      <w>publicar</w>
       <w>publier</w>
       <w>recuperations</w>
       <w>recuperer</w>
       <w>redirige</w>
       <w>remplir</w>
       <w>remplis</w>
+      <w>renverser</w>
+      <w>renvoyer</w>
       <w>reseau</w>
       <w>ressayer</w>
       <w>retour</w>
@@ -89,6 +102,7 @@
       <w>soumis</w>
       <w>statut</w>
       <w>styliser</w>
+      <w>systeme</w>
       <w>tempom</w>
       <w>tempon</w>
       <w>timeago</w>
@@ -98,10 +112,14 @@
       <w>trouve</w>
       <w>uploadify</w>
       <w>utilisateur</w>
+      <w>valeur</w>
       <w>valeurs</w>
       <w>verif</w>
       <w>verifie</w>
+      <w>vers</w>
+      <w>veröffentlichen</w>
       <w>vider</w>
+      <w>viendra</w>
       <w>votre</w>
       <w>voulloir</w>
       <w>vous</w>
