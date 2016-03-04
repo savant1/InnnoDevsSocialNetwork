@@ -75,7 +75,7 @@
 //function qui verifie l'unicite des valeurs
   if(!function_exists('is_already_in_use')){
       function is_already_in_use($field,$values,$table){
-            global $db;
+          global $db;
           $q = $db->prepare("SELECT id FROM $table WHERE $field = ?");
           $q->execute([$values]);
           $count = $q->rowCount();
@@ -300,5 +300,39 @@ if(!function_exists('relation_link_to_display')){
             // lien pour ajouter le lien d'ajout
             return "add_relation_link";
         }
+    }
+}
+
+// check if a freind resquest has already been sent
+if(!function_exists('a_freind_resquest_has_already_been_sent')){
+    function a_freind_resquest_has_already_been_sent($id1,$id2){
+        global $db;
+        $q = $db->prepare("SELECT statut FROM freinds_relationships
+                            WHERE (user_id1 = :user_id1 AND user_id2 = :user_id2)
+                             OR (user_id1 = :user_id2 AND user_id2 = :user_id1)
+                          ");
+        $q->execute([
+            'user_id1' => $id1,
+            'user_id2'=>  $id2
+        ]);
+        $count = $q->rowCount();
+        $q->closeCursor();
+        return (bool)$count;
+    }
+}
+// friend count
+if(!function_exists('freinds_count')){
+    function freinds_count($id){
+        global $db;
+        $q = $db->prepare("SELECT statut FROM freinds_relationships
+                            WHERE (user_id1 = :user_connected OR user_id2 = :user_connected)
+                            AND freinds_relationships.statut = '1'
+                          ");
+        $q->execute([
+            'user_connected' => $id
+        ]);
+        $count = $q->rowCount();
+        $q->closeCursor();
+        return $count;
     }
 }

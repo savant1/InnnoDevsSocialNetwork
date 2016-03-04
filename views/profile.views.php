@@ -7,7 +7,8 @@
                    <div class="col-sm-6">
                        <div class="panel panel-info">
                            <div class="panel-heading">
-                               <h3 class="panel-title"><?= $menu['profil'][$_SESSION['locale']]; ?> <?= e($user->pseudo) ?></h3>
+                               <h3 class="panel-title"><?= $menu['profil'][$_SESSION['locale']]; ?> <?= e($user->pseudo) ?>
+                                    &nbsp;(Vous avez <?= freinds_count($_GET['id']);?> ami<?= freinds_count($_GET['id']) <= 1 ? "" : "s";?>)</h3>
                            </div>
                            <div class="panel-body">
                                <div class="row">
@@ -97,12 +98,15 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="libaries/parsley/parsley.min.js"></script>
 <script src="libaries/parsley/i18n/fr.js"></script>
 <script src="assets/js/jquery.livequery.min.js"></script>
 <script src="assets/js/jquery.timeago.js"></script>
 <script src="assets/js/jquery.timeago.fr.js"></script>
+<script src="libraries/sweetalert/sweetalert.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $("span.timeago").timeago();
@@ -111,7 +115,7 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
         .livequery(function(){
             $("span.timeago").timeago();
         });
-    window.ParsleyValidator.setLocale('fr');
+    //window.ParsleyValidator.setLocale('fr');
 </script>
 
 </body>

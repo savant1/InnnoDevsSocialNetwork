@@ -48,6 +48,12 @@
                             <li><a href="logout.php"><?= $menu['deconnexion'][$_SESSION['locale']]; ?></a></li>
                         </ul>
                     </li>
+                    <li class=" <?= $notifications_count > 0 ? 'have_notifs' : '' ?> ">
+                        <a href="notifications.php">
+                            <i class="fa fa-bell"></i>
+                            <?= $notifications_count > 0 ? "($notifications_count)" : '(0)'; ?>
+                        </a>
+                    </li>
                 <?php else : ?>
                     <li class="<?= set_active('login') ?> "><a href="login.php"><?= $menu['connexion'][$_SESSION['locale']]; ?></a></li>
                     <li class="<?= set_active('register') ?> "><a href="register.php"><?= $menu['inscription'][$_SESSION['locale']]; ?></a></li>

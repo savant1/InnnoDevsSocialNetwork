@@ -200,6 +200,14 @@ textarea.parsley-error {
     height: 25px;
     width: 25px;
 }
+
+li.have_notifs > a{
+     color: whitesmoke !important;
+     font-weight: bold;
+}
+.not_seen{
+     background-color: #1582f2;
+     }
 /*
 ****************************************************************
 ****************************************************************

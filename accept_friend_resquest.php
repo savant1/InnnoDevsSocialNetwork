@@ -14,6 +14,15 @@ if(!empty($_GET['id']) && $_GET['id'] !== get_session('user_id')){
         'user_id1' => get_session('user_id'),
         'user_id2' => $_GET['id']
     ]);
+    // Sauvegarde de la notification
+     $q = $db->prepare('INSERT INTO notifications(subject_id, name, user_id)
+                        VALUES(:subject_id, :name, :user_id)');
+     $q->execute([
+             'subject_id' => $id,
+             'name' => 'friend_request_accepted',
+             'user_id' => get_session('user_id'),
+     ]);
+
     set_flash("vous etes maintenant ami","success");
     redirect('profile.php?id='. $_GET['id']);
 }else{

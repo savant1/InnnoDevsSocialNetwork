@@ -41,6 +41,16 @@
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="microposts_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
+    <table name="notifications" schema="" catalog="boom" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="subject_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="seen" sqlType="ENUM" precision="2" scale="0" nullable="true" jdbcType="1" def="JzAn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="notifications_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
     <table name="users" schema="" catalog="boom" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
@@ -61,6 +71,7 @@
       <exported-key name="freinds_relationships_ibfk_1" table="freinds_relationships" schema="" catalog="boom" columns="user_id1"/>
       <exported-key name="freinds_relationships_ibfk_2" table="freinds_relationships" schema="" catalog="boom" columns="user_id2"/>
       <exported-key name="microposts_ibfk_1" table="microposts" schema="" catalog="boom" columns="user_id"/>
+      <exported-key name="notifications_ibfk_1" table="notifications" schema="" catalog="boom" columns="user_id"/>
       <index name="email" unique="true" columns="email"/>
       <index name="id" unique="true" columns="id"/>
       <index name="pseudo" unique="true" columns="pseudo"/>
