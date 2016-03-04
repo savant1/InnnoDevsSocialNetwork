@@ -12,11 +12,12 @@
                            <div class="panel-body">
                                <div class="row">
                                    <div class="col-sm-5">
-                                       <img src="<?= $user->avatar ? $user->avatar : get_avatar_url($user->email) ?>" alt="Image de profil de <?= e($user->pseudo) ?>" class="avatar-md"><br>
+                                       <img src="<?= $user->avatar ? $user->avatar : get_avatar_url($user->email) ?>"
+                                            alt="Image de profil de <?= e($user->pseudo) ?>" class="avatar-md"><br>
                                    </div>
                                    <div class="col-sm-7">
                                        <?php if(!empty($_GET['id']) && $_GET['id'] !== get_session('user_id') ) : ?>
-                                            <a href="add_freind.php?id=<?= $_GET['id']; ?>" class="btn btn-info pull-right"><i class="fa fa-plus"></i> Ajouter A Mes Amis</a>
+                                            <?php include('partials/_relation_link.php'); ?>
                                        <?php endif; ?>
                                    </div>
                                </div>
@@ -28,7 +29,8 @@
                                        $user->city && $user->country ? '<i class="fa fa-location-arrow"></i> '.
                                            e($user->city).' - '.e($user->country).' <br>' : "";
                                        ?> <br>
-                                       <a href="https://www.google.com/maps?q=<?= e($user->city).' '.e($user->country) ?>" target="_blank"> <?= $menu['map'][$_SESSION['locale']]; ?></a>
+                                       <a href="https://www.google.com/maps?q=<?= e($user->city).' '.e($user->country) ?>"
+                                          target="_blank"> <?= $menu['map'][$_SESSION['locale']]; ?></a>
 
                                    </div>
                                    <div class="col-sm-6">

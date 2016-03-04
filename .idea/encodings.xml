@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/accept_friend_resquest.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/activation.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/add_freind.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/assets/css/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/change_password.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/database.php" charset="UTF-8" />
@@ -24,6 +26,7 @@
     <file url="file://$PROJECT_DIR$/partials/_header.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/_micropost.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/partials/_nav.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partials/_relation_link.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/profile.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/register.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/share_code.php" charset="UTF-8" />

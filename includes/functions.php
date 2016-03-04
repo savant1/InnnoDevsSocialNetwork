@@ -273,3 +273,32 @@ if(!function_exists('replace_links')){
         return preg_replace($regex_url,"<a href=\"$0\" target=\"_blank\">$0</a>",$texte);
     }
 }
+
+// checks if a freind resquest has already been sent
+if(!function_exists('relation_link_to_display')){
+    function  relation_link_to_display($id){
+        global $db;
+        $q = $db->prepare("SELECT user_id1,user_id2,statut FROM freinds_relationships
+                            WHERE (user_id1 = :user_id1 AND user_id2 = :user_id2)
+                             OR (user_id1 = :user_id2 AND user_id2 = :user_id1)");
+        $q->execute([
+            'user_id1' => get_session('user_id'),
+            'user_id2' => $id ]);
+        $data = $q->fetch();
+        $q->closeCursor();
+
+        if($data['user_id1'] == $id && $data['statut'] == '0'){
+            // lien pour soit accepter ou rejeter une demande
+            return "accept_reject_relation_link";
+        } elseif($data['user_id1'] == get_session('user_id') && $data['statut'] == '0'){
+            //lien pour supprimer la demande d'amitier
+            return "cancel_relation_link";
+        }elseif((($data['user_id1'] == get_session('user_id')) or( $data['user_id1'] == $id)) AND $data['statut'] == '1'){
+            //lien pour supprimer la demande d'amitier
+            return "delete_relation_link";
+        }else {
+            // lien pour ajouter le lien d'ajout
+            return "add_relation_link";
+        }
+    }
+}
