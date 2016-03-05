@@ -11,10 +11,24 @@ include "filters/auth_filters.php";
         if(!$user){
             redirect('profile.php');
         } else {
-            $q = $db->prepare("SELECT id, content,created_at FROM microposts WHERE user_id = :user_id ORDER BY created_at DESC ");
-            $q->execute([
-                'user_id' => $_GET['id']
-            ]);
+            $q = $db->prepare("SELECT U.id user_id, U.pseudo, U.email, U.avatar, M.id m_id, M.content, M.created_at, M.like_count
+                               FROM users U, microposts M, freinds_relationships F
+                               WHERE M.user_id = U.id
+                               AND
+
+                                   CASE
+                                       WHEN F.user_id1 = :user_id
+                                       THEN F.user_id2 = M.user_id
+
+                                       WHEN F.user_id2 = :user_id
+                                       THEN F.user_id1 = M.user_id
+                                   END
+
+                               AND F.statut > 0
+                               ORDER BY M.id DESC");
+             $q->execute([
+                 'user_id' => $_GET['id']
+             ]);
             $microposts = $q->fetchAll(PDO::FETCH_OBJ);
         }
     } else {

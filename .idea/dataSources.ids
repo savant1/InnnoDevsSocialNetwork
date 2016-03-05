@@ -33,13 +33,25 @@
       <foreign-key name="freinds_relationships_ibfk_1" columns="user_id1" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="freinds_relationships_ibfk_2" columns="user_id2" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
+    <table name="micropost_likes" schema="" catalog="boom" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="micropost_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="micropost_likes_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="micropost_likes_ibfk_2" columns="micropost_id" ref-table="microposts" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="unique_id" unique="true" columns="id"/>
+    </table>
     <table name="microposts" schema="" catalog="boom" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
       <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="like_count" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="microposts_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="micropost_likes_ibfk_2" table="micropost_likes" schema="" catalog="boom" columns="micropost_id"/>
     </table>
     <table name="notifications" schema="" catalog="boom" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -70,6 +82,7 @@
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="freinds_relationships_ibfk_1" table="freinds_relationships" schema="" catalog="boom" columns="user_id1"/>
       <exported-key name="freinds_relationships_ibfk_2" table="freinds_relationships" schema="" catalog="boom" columns="user_id2"/>
+      <exported-key name="micropost_likes_ibfk_1" table="micropost_likes" schema="" catalog="boom" columns="user_id"/>
       <exported-key name="microposts_ibfk_1" table="microposts" schema="" catalog="boom" columns="user_id"/>
       <exported-key name="notifications_ibfk_1" table="notifications" schema="" catalog="boom" columns="user_id"/>
       <index name="email" unique="true" columns="email"/>

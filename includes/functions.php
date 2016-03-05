@@ -47,7 +47,7 @@
 //function qui va permettre de recuperer l'avatar d'un client en fonction de son adresse email
   if(!function_exists('get_avatar_url')){
       function get_avatar_url($email,$size = 100){
-        return "http://gravatar.com/avatar/".md5(strtolower(trim(e($email))))."?s=".$size;
+        return "http://gravatar.com/avatar/".md5(strtolower(trim(e($email))))."?s=".$size.'&d=wavatar';
       }
   }
 
@@ -336,3 +336,243 @@ if(!function_exists('freinds_count')){
         return $count;
     }
 }
+
+// check if the user has already like the micropost
+if(!function_exists('user_has_already_like_the_micropost')){
+    function user_has_already_like_the_micropost($micropost_id){
+        global $db;
+        $q = $db->prepare('SELECT id FROM micropost_likes
+                               WHERE user_id = :user_id
+                               AND micropost_id= :micropost_id '
+        );
+        $q->execute([
+            'user_id' => get_session('user_id'),
+            'micropost_id' => $micropost_id
+        ]);
+
+        return (bool) $q->rowCount();
+    }
+}
+
+// like the micropost
+if(!function_exists('like_micropost')){
+    function like_micropost($micropost_id){
+        global $db;
+        $q = $db->prepare('INSERT INTO micropost_likes (user_id, micropost_id) VALUES (:user_id, :micropost_id) ');
+        $q->execute([
+            'user_id' => get_session('user_id'),
+            'micropost_id' => $micropost_id
+        ]);
+
+        $q = $db->prepare('UPDATE microposts SET like_count = like_count + 1 WHERE id = :micropost_id');
+        $q->execute([
+            'micropost_id' => $micropost_id
+        ]);
+    }
+}
+
+// unlike the micropost
+if(!function_exists('unlike_micropost')){
+    function unlike_micropost($micropost_id){
+        global $db;
+        $q = $db->prepare('DELETE FROM micropost_likes
+                               WHERE user_id= :user_id
+                               AND micropost_id = :micropost_id
+                             ');
+        $q->execute([
+            'user_id' => get_session('user_id'),
+            'micropost_id' => $micropost_id
+        ]);
+
+        $q = $db->prepare('UPDATE microposts SET like_count = like_count - 1 WHERE id = :micropost_id');
+        $q->execute([
+            'micropost_id' => $micropost_id
+        ]);
+    }
+}
+
+// get all the like of given comment
+if(!function_exists('get_likes_count')){
+    function get_likes_count($micropost_id){
+        global $db;
+        $q = $db->prepare("SELECT like_count FROM microposts WHERE id = :id");
+        $q->execute([
+            'id' => $micropost_id
+        ]);
+
+        $data = $q->fetch(PDO::FETCH_OBJ);
+        return intval($data->like_count);
+    }
+}
+
+// get all the likers of given comment
+if(!function_exists('get_likers')){
+    function get_likers($micropost_id){
+        global $db;
+        $q = $db->prepare("SELECT users.id, users.pseudo FROM users
+                           LEFT JOIN micropost_likes
+                           ON users.id = micropost_likes.user_id
+                           WHERE micropost_id = :id
+                           ORDER BY micropost_likes.id DESC
+                           LIMIT 3
+                           ");
+        $q->execute([
+            'id' => $micropost_id
+        ]);
+        return $q->fetchAll(PDO::FETCH_OBJ);
+    }
+}
+
+// check if the current user has like the micropost // user_has_already_like_the_micropost
+if(!function_exists('check_if_the_current_user_has_like_the_micropost')){
+    function check_if_the_current_user_has_like_the_micropost($micropost_id){
+        global $db;
+        $q = $db->prepare("SELECT id FROM micropost_likes
+                           WHERE user_id = :user_id
+                           AND micropost_id = :micropost_id"
+        );
+        $q->execute([
+            'user_id'      => get_session('user_id'),
+            'micropost_id' => $micropost_id
+        ]);
+
+        $count = $q->rowCount();
+        $q->closeCursor();
+        return (bool)$count;
+    }
+}
+
+    // display all the likers
+    if(!function_exists('get_likers_text')){
+        function get_likers_text($micropost_id){
+            $likes_count = get_likes_count($micropost_id);
+            $likers = get_likers($micropost_id);
+
+            $output = '';
+            if($likes_count > 0){
+                $reamaining_like_count = $likes_count - 3;
+                $itself_like = user_has_already_like_the_micropost($micropost_id);
+
+                foreach($likers AS $liker){
+                     if($liker->id != get_session('user_id')){
+                         $output.= '<a href="profile.php?id='.$liker->id.'">'.e($liker->pseudo).'</a>, ';
+                     }
+                }
+                    $output = $itself_like ? 'Vous,' .$output : $output;
+
+                if(($likes_count == 2 || $likes_count == 3) && $output != ""){
+                    $output = trim($output,', ');
+                    $arr = explode(',',$output);
+                    $lastItem = array_pop($arr);
+                    $output = implode(', ',$arr);
+                    $output.= ' et '.$lastItem;
+                }
+
+                $output = trim($output,', ');
+
+                switch($likes_count){
+                    case 1:
+                        $output.= $itself_like ? ' aimez ce commentaire.' : ' aime ce commentaire.';
+                    break;
+
+                    case 2:
+                    case 3:
+                        $output.=$itself_like ? ' aimez ce commentaire.' : ' aiment ce commentaire.';
+                    break;
+
+                    case 4:
+                        $output.= $itself_like ? ' et une autre personne aimez ce commentaire.'
+                                               : ' et une autre personne aiment ce commentaire';
+                    break;
+
+                    default:
+                        $output.=$itself_like ? ' et ' .$reamaining_like_count.' autres personnes aimez ce commentaire.'
+                                              : ' et ' .$reamaining_like_count.' autres personnes aiment ce commentaire';
+                    break;
+                }
+            }
+
+            return $output;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //        if($likes_count >= 4){
+//            $reamaining_like_count = $likes_count - 3;
+//        } else{
+//            $reamaining_like_count = $likes_count - 0;
+//        }
+//        $output = '';
+//        foreach($likers AS $liker){
+//            $output.= '<a href="profile.php?id='.$liker->id.'">'.e($liker->pseudo).'</a>,&nbsp;';
+//        }
+//        if($likes_count > 4 ){
+//            $output .= 'et '. $reamaining_like_count. ' autres personnes aiment ce commentaire ';
+//        } elseif($likes_count === 3  OR $likes_count === 2){
+//            $output .= 'aiment ce commentaire ';
+//        } elseif($likes_count ===1){
+//            $output.= ' aime ce commentaire ';
+//        }else{
+//            $output = $output;
+//        }

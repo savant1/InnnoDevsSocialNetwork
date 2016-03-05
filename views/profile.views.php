@@ -114,8 +114,46 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
     $('span.timeago')
         .livequery(function(){
             $("span.timeago").timeago();
+    });
+
+    $('a.like').on("click",function(e){
+        e.preventDefault();
+
+//        var action = $(this).attr("data-action");
+//        var href = $(this).attr("href");
+//
+//        var part = href.split("=");
+//        var id = part[1];
+//
+//        var part1 = href.split("_");
+//        var action = part1[0];
+//
+//        alert(action);
+        var id = $(this).attr("id");
+        var action = $(this).data("action");
+        var url ='ajax/micropost_like.php';
+        var micropost_id = id.split("like")[1];
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: {
+                micropost_id: micropost_id,
+                action: action
+            },
+            success: function(likers){
+                $("#likers_" + micropost_id).html(likers);
+                if(action == 'like'){
+                    $("#" + id).html("<i class=\"fa fa-heartbeat\"></i> je n'aime plus").data('action','unlike');
+                } else {
+                    $("#" + id).html("<i class=\"fa fa-heart\"></i> j'aime").data('action','like');
+                }
+            }
         });
-    //window.ParsleyValidator.setLocale('fr');
+
+    });
+
+    window.ParsleyValidator.setLocale('fr');
 </script>
 
 </body>
