@@ -79,15 +79,16 @@
                                </form>
                            </div>
                        <?php endif; ?>
-
-                       <?php if(count($microposts) != 0 ) :?>
-                           <?php foreach ($microposts AS $micropost):?>
-                                <?php include('partials/_micropost.php');?>
-                           <?php endforeach; ?>
-                       <?php else: ?>
-                            <p class="text-center">
-                               <?=  $long_texte['no_micropost'][$_SESSION['locale']]; ?>
-                            </p>
+                       <?php if(current_user_is_freind_with($_GET['id'])) : ?>
+                           <?php if(count($microposts) != 0 ) :?>
+                               <?php foreach ($microposts AS $micropost):?>
+                                    <?php include('partials/_micropost.php');?>
+                               <?php endforeach; ?>
+                           <?php else: ?>
+                                <p class="text-center">
+                                   <?=  $long_texte['no_micropost'][$_SESSION['locale']]; ?>
+                                </p>
+                           <?php endif; ?>
                        <?php endif; ?>
                    </div>
                 </div>

@@ -26,9 +26,11 @@ if(isset($_POST['save'])){
 
         if($success){
             $id = $db->lastInsertId();
+            $fullUrl = WEBSITE_URL. 'show_code.php?id='.$id ;
+            create_micropost_for_the_current_user($menu['new_parta'][$_SESSION['locale']].$fullUrl);
             redirect('show_code.php?id='.$id);
         }else{
-            set_flash("Erreur lors du partage du code sources bien voulloir reprendre la procedure","danger");
+            set_flash($menu['err_new_parta'][$_SESSION['locale']],"danger");
             redirect('share_code.php');
         }
     }else {

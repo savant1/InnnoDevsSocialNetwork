@@ -15,8 +15,8 @@
              </ul>
             <div id="pagination"><?= $pagination ?></div>
         <?php else: ?>
-             <p>Aucune notification disponible pour l'instant.</p>
-             <?php endif; ?>
+             <p><?= $menu['no_notif'][$_SESSION['locale']]; ?></p>
+        <?php endif; ?>
      </div>
 </div>
 

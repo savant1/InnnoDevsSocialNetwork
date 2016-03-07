@@ -9,6 +9,18 @@
       }
   }
 
+//creation automatique de micropost
+  if(!function_exists('create_micropost_for_the_current_user')){
+      function create_micropost_for_the_current_user($content){
+          global $db;
+          $q = $db->prepare("INSERT INTO microposts (content, user_id) VALUES (:content,:user_id)");
+          $q->execute([
+              'content' => $content,
+              'user_id' => get_session('user_id')
+          ]);
+      }
+  }
+
 //function qui va permettre de recuperer les sessions suivant la cle passer en paramettre
   if(!function_exists('get_session')){
       function get_session($key){
@@ -86,7 +98,7 @@
 
 //function qui nous permet de styliser le message de confirmation d'envoie du mail
   if(!function_exists('set_flash')){
-        function set_flash($message , $type){
+        function set_flash($message , $type = 'info'){
             $_SESSION['notification']['message'] = $message;
             $_SESSION['notification']['type'] = $type;
         }
@@ -270,6 +282,11 @@ if(!function_exists('replace_links')){
     function replace_links($texte){
         $regex_url = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,5}(\:[0-9]+)?(\/\S*)?/";
 
+//        return preg_replace(array('/(?i)\b((?:https?:\/\/|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)
+//        (?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))\)|[^\s`!
+//        ()\[\]{};:\'".,<>?«»“”‘’]))/', '/(^|[^a-z0-9_])@([a-z0-9_]+)/i', '/(^|[^a-z0-9_])#([a-z0-9_]+)/i'),
+//        array('<a href="$1" target="_blank">$1</a>', '$1<a href="">@$2</a>', '$1<a href="index.php?hashtag=$2">#$2</a>'), $texte);
+
         return preg_replace($regex_url,"<a href=\"$0\" target=\"_blank\">$0</a>",$texte);
     }
 }
@@ -320,6 +337,26 @@ if(!function_exists('a_freind_resquest_has_already_been_sent')){
         return (bool)$count;
     }
 }
+
+// check if the current user is freind withthe second
+if(!function_exists('current_user_is_freind_with')){
+    function current_user_is_freind_with($second_user_id){
+        global $db;
+        $q = $db->prepare("SELECT statut FROM freinds_relationships
+                            WHERE (user_id1 = :user_id1 AND user_id2 = :user_id2)
+                             OR (user_id1 = :user_id2 AND user_id2 = :user_id1)
+                             AND statut = '1'
+                          ");
+        $q->execute([
+            'user_id1' => get_session('user_id'),
+            'user_id2'=>  $second_user_id
+        ]);
+        $count = $q->rowCount();
+        $q->closeCursor();
+        return (bool)$count;
+    }
+}
+
 // friend count
 if(!function_exists('freinds_count')){
     function freinds_count($id){

@@ -18,10 +18,12 @@
       <w>apres</w>
       <w>attente</w>
       <w>aucun</w>
+      <w>aucune</w>
       <w>aurait</w>
       <w>aussi</w>
       <w>awesone</w>
       <w>bcrypt</w>
+      <w>benutzer</w>
       <w>bibliotheques</w>
       <w>bien</w>
       <w>biographie</w>
@@ -45,13 +47,17 @@
       <w>detecte</w>
       <w>deux</w>
       <w>developpeur</w>
+      <w>disponibles</w>
       <w>donc</w>
       <w>donnee</w>
       <w>donnees</w>
+      <w>droite</w>
       <w>défaut</w>
       <w>echapper</w>
       <w>emploi</w>
+      <w>encuentra</w>
       <w>enregistrement</w>
+      <w>enrei</w>
       <w>envoye</w>
       <w>envoyer</w>
       <w>erreur</w>
@@ -63,11 +69,13 @@
       <w>faudra</w>
       <w>femele</w>
       <w>fichier</w>
+      <w>folgende</w>
       <w>fonction</w>
       <w>formulaire</w>
       <w>forwardind</w>
       <w>freind</w>
       <w>frero</w>
+      <w>früher</w>
       <w>generer</w>
       <w>github</w>
       <w>gravatar</w>
@@ -77,27 +85,37 @@
       <w>invalide</w>
       <w>jeton</w>
       <w>jours</w>
+      <w>keine</w>
       <w>keyup</w>
       <w>langues</w>
       <w>libaries</w>
+      <w>linenums</w>
       <w>liste</w>
       <w>loguez</w>
       <w>lors</w>
       <w>marqués</w>
       <w>maxcdn</w>
+      <w>meldungen</w>
       <w>memoire</w>
       <w>mise</w>
       <w>nbre</w>
       <w>nombre</w>
+      <w>notif</w>
+      <w>notificaciones</w>
       <w>notre</w>
+      <w>nouveau</w>
       <w>paramettre</w>
       <w>parcourir</w>
+      <w>parta</w>
+      <w>partage</w>
       <w>passwor</w>
       <w>permet</w>
       <w>peut</w>
       <w>pleins</w>
       <w>plutard</w>
+      <w>prettyprint</w>
       <w>profil</w>
+      <w>précédent</w>
       <w>publicar</w>
       <w>publier</w>
       <w>rechercher</w>
@@ -110,6 +128,7 @@
       <w>remplis</w>
       <w>renverser</w>
       <w>renvoyer</w>
+      <w>reprendre</w>
       <w>reseau</w>
       <w>resquest</w>
       <w>ressayer</w>
@@ -124,12 +143,15 @@
       <w>selecteurs</w>
       <w>semaines</w>
       <w>sexe</w>
+      <w>siguiente</w>
       <w>soit</w>
       <w>sont</w>
       <w>soumis</w>
       <w>statut</w>
       <w>styliser</w>
       <w>succès</w>
+      <w>suchen</w>
+      <w>suivant</w>
       <w>suppressions</w>
       <w>supprimer</w>
       <w>supprimé</w>
@@ -137,12 +159,15 @@
       <w>systeme</w>
       <w>tempom</w>
       <w>tempon</w>
+      <w>textareashare</w>
       <w>timeago</w>
       <w>tmpl</w>
+      <w>todavía</w>
       <w>tous</w>
       <w>tres</w>
       <w>trouve</w>
       <w>uploadify</w>
+      <w>usuario</w>
       <w>utilisateur</w>
       <w>utiliser</w>
       <w>valeur</w>
@@ -153,6 +178,8 @@
       <w>veröffentlichen</w>
       <w>vider</w>
       <w>viendra</w>
+      <w>viens</w>
+      <w>vorhanden</w>
       <w>votre</w>
       <w>voulloir</w>
       <w>vouloir</w>

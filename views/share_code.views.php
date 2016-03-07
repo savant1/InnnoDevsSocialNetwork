@@ -5,8 +5,7 @@
             <div class="main-content-share-code">
                 <form method="post" autocomplete="off">
                     <textarea name="code" class="prettyprint linenums" id="code" placeholder=<?= $menu['textareashare'][$_SESSION['locale']]; ?>
-                              required="required"><?= e($code); ?></pre>
-                    </textarea>
+                              required="required"><?php isset($code) ?  e($code) : $menu['textareashare'][$_SESSION['locale']] ?></textarea>
                     <div class="btn-group navi">
                         <a href="#" class="btn btn-danger"><?= $menu['efface'][$_SESSION['locale']]; ?></a>
                         <input type="submit" class="btn btn-success" name="save" value="<?= $menu['enrei'][$_SESSION['locale']]; ?>">
@@ -25,8 +24,10 @@
 <script src="assets/js/tabby.min.js"></script>
 <script src="assets/js/prettify.js"></script>
 <script>
-    $("#code").tabby();
-    $("#code").Height( $(window).Height() - 50 );
+    $(document).ready(function(){
+        $("#code").tabby();
+        $("#code").Height( $(window).Height() - 50 );
+    )};
 </script>
 </body>
 </html>

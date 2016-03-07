@@ -39,6 +39,13 @@ $menu = [
     'confirmation_mdp' => ['fr' => 'Mot De Passe de confirmation' , 'en' => 'Set Password confirmation', 'es' => 'Conjunto de confirmación de contraseña', 'all' => 'Set Passwortbestätigung'],
     'publier' => ['fr' => 'Publier' , 'en' => 'Publish', 'es' => 'Publicar', 'all' => 'Veröffentlichen'],
     'statut' => ['fr' => 'Statut' , 'en' => 'Statut', 'es' => 'Estatus', 'all' => 'Status'],
+    'statut_a_jour' => ['fr' => 'votre statut a étè mis a jour' , 'en' => 'Your status has been thoroughly updated', 'es' => 'Su estado se ha actualizado a fondo', 'all' => 'Ihr Status wurde gründlich aktualisiert'],
+    'no_content_send' => ['fr' => 'vous n\'avez fourni aucun contenu' , 'en' => 'you have not provided any content', 'es' => 'no se ha proporcionado ningún contenido', 'all' => 'Sie haben keine Inhalte zur Verfügung gestellt'],
+    'precedent' => ['fr' => 'Précédent' , 'en' => 'Previous', 'es' => 'Anterior', 'all' => 'Früher'],
+    'suivant' => ['fr' => 'Suivant' , 'en' => 'Following', 'es' => 'Siguiente', 'all' => 'Folgende'],
+    'err_new_parta' => ['fr' => 'Erreur lors du partage du code sources bien voulloir reprendre la procedure' , 'en' => 'Error code sharing sources kindly repeat the procedure', 'es' => 'Fuentes de código de error de intercambio de la amabilidad de repetir el procedimiento', 'all' => 'Fehlercode -Sharing-Quellen wiederholen Sie bitte das Verfahren'],
+    'new_parta' => ['fr' => 'je viens de publier un nouveau code source:  ' , 'en' => 'I have just published a new source code :', 'es' => 'Acabo de publicar un nuevo código de origen : ', 'all' => 'Ich habe gerade veröffentlicht einen neuen Quellcode :'],
     'pub_mur' => ['fr' => 'Publier sur votre mur ...' , 'en' => 'Publish on your wall ...', 'es' => 'Publicar en su pared ...', 'all' => 'Veröffentlichen auf Ihrer Wand ...'],
     'search' => ['fr' => 'Rechercher un utilisateur' , 'en' => 'Find User', 'es' => 'Encuentra usuario ...', 'all' => 'Benutzer suchen ...'],
+    'no_notif' => ['fr' => 'Aucune notification disponible pour l\'instant.' , 'en' => 'No notifications available yet.', 'es' => 'No hay notificaciones disponibles todavía.', 'all' => 'Keine Meldungen vorhanden.'],
 ];

@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6384c85c-f26a-4f35-bfca-adee759eed6d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libaries/parsley/parsley.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_errors.php" afterPath="$PROJECT_DIR$/partials/_errors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_flash.php" afterPath="$PROJECT_DIR$/partials/_flash.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_footer.php" afterPath="$PROJECT_DIR$/partials/_footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_header.php" afterPath="$PROJECT_DIR$/partials/_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_micropost.php" afterPath="$PROJECT_DIR$/partials/_micropost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/_nav.php" afterPath="$PROJECT_DIR$/partials/_nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_micropost.php" afterPath="$PROJECT_DIR$/delete_micropost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/ferry_francois.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/ferry_francois.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/functions.php" afterPath="$PROJECT_DIR$/includes/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locales/memus.php" afterPath="$PROJECT_DIR$/locales/memus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/micropost.php" afterPath="$PROJECT_DIR$/micropost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notifications.php" afterPath="$PROJECT_DIR$/notifications.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/notifications.views.php" afterPath="$PROJECT_DIR$/views/notifications.views.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.views.php" afterPath="$PROJECT_DIR$/views/profile.views.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share_code.php" afterPath="$PROJECT_DIR$/share_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/share_code.views.php" afterPath="$PROJECT_DIR$/views/share_code.views.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="oop.iws" />
@@ -62,61 +53,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/functions.php">
+      <file leaf-file-name="memus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locales/memus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63909775">
-              <caret line="217" column="115" selection-start-line="217" selection-start-column="115" selection-end-line="217" selection-end-column="115" />
+            <state vertical-scroll-proportion="-15.884615">
+              <caret line="42" column="20" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifications.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.038462">
+              <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="130" />
               <folding>
-                <element signature="e#90#232#0#PHP" expanded="false" />
-                <element signature="e#326#540#0#PHP" expanded="false" />
-                <element signature="e#641#939#0#PHP" expanded="false" />
-                <element signature="e#1040#1349#0#PHP" expanded="false" />
-                <element signature="e#1448#1654#0#PHP" expanded="false" />
-                <element signature="e#1749#1903#0#PHP" expanded="false" />
-                <element signature="e#1961#2294#0#PHP" expanded="false" />
-                <element signature="e#2343#2670#0#PHP" expanded="false" />
-                <element signature="e#2757#2967#0#PHP" expanded="false" />
-                <element signature="e#3023#3166#0#PHP" expanded="false" />
-                <element signature="e#3261#3534#0#PHP" expanded="false" />
-                <element signature="e#3646#3860#0#PHP" expanded="false" />
-                <element signature="e#3951#4143#0#PHP" expanded="false" />
-                <element signature="e#4205#4522#0#PHP" expanded="false" />
-                <element signature="e#4573#4695#0#PHP" expanded="false" />
-                <element signature="e#4775#5217#0#PHP" expanded="false" />
-                <element signature="e#5313#5485#0#PHP" expanded="false" />
-                <element signature="e#5581#5893#0#PHP" expanded="false" />
-                <element signature="e#5629#5889#0#PHP" expanded="false" />
-                <element signature="e#5996#6262#0#PHP" expanded="false" />
-                <element signature="e#7472#8973#0#PHP" expanded="false" />
-                <element signature="e#9000#9277#0#PHP" expanded="false" />
-                <element signature="e#9332#10567#0#PHP" expanded="false" />
-                <element signature="e#10621#11224#0#PHP" expanded="false" />
-                <element signature="e#11241#11751#0#PHP" expanded="false" />
-                <element signature="e#11805#12314#0#PHP" expanded="false" />
-                <element signature="e#12338#12876#0#PHP" expanded="false" />
-                <element signature="e#12902#13535#0#PHP" expanded="false" />
-                <element signature="e#13574#13920#0#PHP" expanded="false" />
-                <element signature="e#13961#14541#0#PHP" expanded="false" />
-                <element signature="e#14634#15217#0#PHP" expanded="false" />
-                <marker date="1457341508248" expanded="true" signature="768:800" placeholder="SELECT * FRO..users..." />
-                <marker date="1457341508248" expanded="true" signature="1169:1204" placeholder="SELECT code ..codes..." />
-                <marker date="1457341508248" expanded="true" signature="2494:2532" placeholder="SELECT id FR..." />
-                <marker date="1457341508248" expanded="true" signature="6139:6181" placeholder="SELECT * FRO..." />
-                <marker date="1457341508248" expanded="true" signature="6746:6904" placeholder="INSERT INTO ..." />
-                <marker date="1457341508248" expanded="true" signature="7972:8337" placeholder="SELECT auth_..auth_tokens..." />
-                <marker date="1457341508248" expanded="true" signature="9474:9694" placeholder="SELECT user_..freinds_relationships..." />
-                <marker date="1457341508248" expanded="true" signature="10798:11000" placeholder="SELECT statu..freinds_relationships..." />
-                <marker date="1457341508248" expanded="true" signature="11360:11560" placeholder="SELECT statu..freinds_relationships..." />
-                <marker date="1457341508248" expanded="true" signature="11978:12127" placeholder="SELECT id FR..micropost_likes..." />
-                <marker date="1457341508248" expanded="true" signature="12469:12553" placeholder="INSERT INTO ..." />
-                <marker date="1457341508248" expanded="true" signature="12713:12787" placeholder="UPDATE micro..." />
-                <marker date="1457341508248" expanded="true" signature="13037:13183" placeholder="DELETE FROM ..." />
-                <marker date="1457341508248" expanded="true" signature="13372:13446" placeholder="UPDATE micro..." />
-                <marker date="1457341508248" expanded="true" signature="13707:13755" placeholder="SELECT like_..microposts..." />
-                <marker date="1457341508248" expanded="true" signature="14084:14389" placeholder="SELECT users..users..." />
-                <marker date="1457341508248" expanded="true" signature="14833:14975" placeholder="SELECT id FR..micropost_likes..." />
+                <marker date="1457348551796" expanded="true" signature="127:248" placeholder="SELECT notif..notifications..." />
+                <marker date="1457348551796" expanded="true" signature="1039:1486" placeholder="SELECT users..notifications..." />
+                <marker date="1457348551796" expanded="true" signature="3186:3242" placeholder="UPDATE notif..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accept_friend_resquest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accept_friend_resquest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.884615">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <marker date="1457086920995" expanded="true" signature="242:461" placeholder="UPDATE frein..." />
+                <marker date="1457086920995" expanded="true" signature="632:745" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/activation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.67105263">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <marker date="1457024453632" expanded="true" signature="324:380" placeholder="SELECT id , ..users..." />
+                <marker date="1457024453632" expanded="true" signature="638:684" placeholder="UPDATE users..." />
+                <marker date="1457024453632" expanded="true" signature="849:952" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,9 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/share_code.php" />
-        <option value="$PROJECT_DIR$/micropost.php" />
-        <option value="$PROJECT_DIR$/edit_user.php" />
         <option value="$PROJECT_DIR$/show_code.php" />
         <option value="$PROJECT_DIR$/filters/auth_filters.php" />
         <option value="$PROJECT_DIR$/list_users.php" />
@@ -164,8 +154,6 @@
         <option value="$PROJECT_DIR$/add_freind.php" />
         <option value="$PROJECT_DIR$/partials/notifications/friend_request_accept.php" />
         <option value="$PROJECT_DIR$/partials/notifications/friend_request_sent.php" />
-        <option value="$PROJECT_DIR$/notifications.php" />
-        <option value="$PROJECT_DIR$/views/notifications.views.php" />
         <option value="$PROJECT_DIR$/assets/js/mian.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2964c7c9-0579-4eb9-8d87-1cf072df678f/console_2.sql" />
         <option value="$PROJECT_DIR$/profile.php" />
@@ -173,21 +161,26 @@
         <option value="$PROJECT_DIR$/like_micropost.php" />
         <option value="$PROJECT_DIR$/unlike_micropost.php" />
         <option value="$PROJECT_DIR$/ajax/micropost_like.php" />
-        <option value="$PROJECT_DIR$/locales/memus.php" />
         <option value="$PROJECT_DIR$/views/index.veiws.php" />
         <option value="$PROJECT_DIR$/partials/_footer.php" />
         <option value="$PROJECT_DIR$/ajax/search.php" />
         <option value="$PROJECT_DIR$/partials/_nav.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2964c7c9-0579-4eb9-8d87-1cf072df678f/console.sql" />
         <option value="$PROJECT_DIR$/partials/_micropost.php" />
-        <option value="$PROJECT_DIR$/views/profile.views.php" />
         <option value="$PROJECT_DIR$/partials/_header.php" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/delete_micropost.php" />
         <option value="$PROJECT_DIR$/partials/_errors.php" />
         <option value="$PROJECT_DIR$/partials/_flash.php" />
+        <option value="$PROJECT_DIR$/views/share_code.views.php" />
+        <option value="$PROJECT_DIR$/views/profile.views.php" />
         <option value="$PROJECT_DIR$/includes/functions.php" />
+        <option value="$PROJECT_DIR$/views/notifications.views.php" />
+        <option value="$PROJECT_DIR$/share_code.php" />
+        <option value="$PROJECT_DIR$/notifications.php" />
+        <option value="$PROJECT_DIR$/locales/memus.php" />
+        <option value="$PROJECT_DIR$/micropost.php" />
       </list>
     </option>
   </component>
@@ -412,6 +405,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="innovDevs social network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnoDevsSocialNetwork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -542,7 +549,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457199672572</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="correction des erreurs">
+      <created>1457341858678</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1457341858678</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -556,10 +569,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.204236" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.204236" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18003026" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -568,7 +582,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -599,48 +612,16 @@
     <MESSAGE value="modification du readme" />
     <MESSAGE value="systeme de notification et de suppresseionde microposts mais contient encore des erreurs sur sweetalert et parsley que je ne parviens pas encore a resoudre mais je compte le faire des ce soir" />
     <MESSAGE value="ajout de la fonction de like style facebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la fonction de like style facebook" />
+    <MESSAGE value="correction des erreurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction des erreurs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/9ed4b4b1/2964c7c9-0579-4eb9-8d87-1cf072df678f/boom..codes">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35150376">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/locale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35150376">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63909775">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/list_users.view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7669173">
@@ -718,38 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accept_friend_resquest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6921606">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/notifications/friend_request_accepted.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19502868">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/micropost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/notifications.views.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45506692">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notifications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06500956">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -851,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locales/memus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.192308">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -891,6 +836,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4473684">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -925,6 +871,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.038462">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -943,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2455198">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/_micropost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -963,22 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5056391">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/profile.views.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2669173">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/_nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -1025,59 +948,179 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63909775">
-          <caret line="217" column="115" selection-start-line="217" selection-start-column="115" selection-end-line="217" selection-end-column="115" />
+        <state vertical-scroll-proportion="-6.0384617">
+          <caret line="99" column="36" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
           <folding>
             <element signature="e#90#232#0#PHP" expanded="false" />
-            <element signature="e#326#540#0#PHP" expanded="false" />
-            <element signature="e#641#939#0#PHP" expanded="false" />
-            <element signature="e#1040#1349#0#PHP" expanded="false" />
-            <element signature="e#1448#1654#0#PHP" expanded="false" />
-            <element signature="e#1749#1903#0#PHP" expanded="false" />
-            <element signature="e#1961#2294#0#PHP" expanded="false" />
-            <element signature="e#2343#2670#0#PHP" expanded="false" />
-            <element signature="e#2757#2967#0#PHP" expanded="false" />
-            <element signature="e#3023#3166#0#PHP" expanded="false" />
-            <element signature="e#3261#3534#0#PHP" expanded="false" />
-            <element signature="e#3646#3860#0#PHP" expanded="false" />
-            <element signature="e#3951#4143#0#PHP" expanded="false" />
-            <element signature="e#4205#4522#0#PHP" expanded="false" />
-            <element signature="e#4573#4695#0#PHP" expanded="false" />
-            <element signature="e#4775#5217#0#PHP" expanded="false" />
-            <element signature="e#5313#5485#0#PHP" expanded="false" />
-            <element signature="e#5581#5893#0#PHP" expanded="false" />
-            <element signature="e#5629#5889#0#PHP" expanded="false" />
-            <element signature="e#5996#6262#0#PHP" expanded="false" />
-            <element signature="e#7472#8973#0#PHP" expanded="false" />
-            <element signature="e#9000#9277#0#PHP" expanded="false" />
-            <element signature="e#9332#10567#0#PHP" expanded="false" />
-            <element signature="e#10621#11224#0#PHP" expanded="false" />
-            <element signature="e#11241#11751#0#PHP" expanded="false" />
-            <element signature="e#11805#12314#0#PHP" expanded="false" />
-            <element signature="e#12338#12876#0#PHP" expanded="false" />
-            <element signature="e#12902#13535#0#PHP" expanded="false" />
-            <element signature="e#13574#13920#0#PHP" expanded="false" />
-            <element signature="e#13961#14541#0#PHP" expanded="false" />
-            <element signature="e#14634#15217#0#PHP" expanded="false" />
-            <marker date="1457341508248" expanded="true" signature="768:800" placeholder="SELECT * FRO..users..." />
-            <marker date="1457341508248" expanded="true" signature="1169:1204" placeholder="SELECT code ..codes..." />
-            <marker date="1457341508248" expanded="true" signature="2494:2532" placeholder="SELECT id FR..." />
-            <marker date="1457341508248" expanded="true" signature="6139:6181" placeholder="SELECT * FRO..." />
-            <marker date="1457341508248" expanded="true" signature="6746:6904" placeholder="INSERT INTO ..." />
-            <marker date="1457341508248" expanded="true" signature="7972:8337" placeholder="SELECT auth_..auth_tokens..." />
-            <marker date="1457341508248" expanded="true" signature="9474:9694" placeholder="SELECT user_..freinds_relationships..." />
-            <marker date="1457341508248" expanded="true" signature="10798:11000" placeholder="SELECT statu..freinds_relationships..." />
-            <marker date="1457341508248" expanded="true" signature="11360:11560" placeholder="SELECT statu..freinds_relationships..." />
-            <marker date="1457341508248" expanded="true" signature="11978:12127" placeholder="SELECT id FR..micropost_likes..." />
-            <marker date="1457341508248" expanded="true" signature="12469:12553" placeholder="INSERT INTO ..." />
-            <marker date="1457341508248" expanded="true" signature="12713:12787" placeholder="UPDATE micro..." />
-            <marker date="1457341508248" expanded="true" signature="13037:13183" placeholder="DELETE FROM ..." />
-            <marker date="1457341508248" expanded="true" signature="13372:13446" placeholder="UPDATE micro..." />
-            <marker date="1457341508248" expanded="true" signature="13707:13755" placeholder="SELECT like_..microposts..." />
-            <marker date="1457341508248" expanded="true" signature="14084:14389" placeholder="SELECT users..users..." />
-            <marker date="1457341508248" expanded="true" signature="14833:14975" placeholder="SELECT id FR..micropost_likes..." />
+            <element signature="e#272#658#0#PHP" expanded="false" />
+            <element signature="e#752#966#0#PHP" expanded="false" />
+            <element signature="e#1067#1365#0#PHP" expanded="false" />
+            <element signature="e#1466#1775#0#PHP" expanded="false" />
+            <element signature="e#1874#2080#0#PHP" expanded="false" />
+            <element signature="e#2175#2329#0#PHP" expanded="false" />
+            <element signature="e#2387#2720#0#PHP" expanded="false" />
+            <element signature="e#2769#3096#0#PHP" expanded="false" />
+            <element signature="e#3183#3402#0#PHP" expanded="false" />
+            <element signature="e#3458#3601#0#PHP" expanded="false" />
+            <element signature="e#3696#3969#0#PHP" expanded="false" />
+            <element signature="e#4081#4295#0#PHP" expanded="false" />
+            <element signature="e#4386#4578#0#PHP" expanded="false" />
+            <element signature="e#4640#4957#0#PHP" expanded="false" />
+            <element signature="e#5008#5130#0#PHP" expanded="false" />
+            <element signature="e#5210#5652#0#PHP" expanded="false" />
+            <element signature="e#5748#5920#0#PHP" expanded="false" />
+            <element signature="e#6016#6328#0#PHP" expanded="false" />
+            <element signature="e#6064#6324#0#PHP" expanded="false" />
+            <element signature="e#6431#6697#0#PHP" expanded="false" />
+            <element signature="e#6714#7891#0#PHP" expanded="false" />
+            <element signature="e#6755#7889#0#PHP" expanded="false" />
+            <element signature="e#6969#7099#0#PHP" expanded="false" />
+            <element signature="e#7907#9408#0#PHP" expanded="false" />
+            <element signature="e#9435#10162#0#PHP" expanded="false" />
+            <element signature="e#10217#11452#0#PHP" expanded="false" />
+            <element signature="e#11506#12109#0#PHP" expanded="false" />
+            <element signature="e#12843#13353#0#PHP" expanded="false" />
+            <element signature="e#13407#13916#0#PHP" expanded="false" />
+            <element signature="e#13940#14478#0#PHP" expanded="false" />
+            <element signature="e#14504#15137#0#PHP" expanded="false" />
+            <element signature="e#15176#15522#0#PHP" expanded="false" />
+            <element signature="e#15563#16143#0#PHP" expanded="false" />
+            <element signature="e#16236#16819#0#PHP" expanded="false" />
+            <element signature="e#16855#18981#0#PHP" expanded="false" />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT code ..codes..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT auth_..auth_tokens..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT user_..freinds_relationships..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT statu..freinds_relationships..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT statu..freinds_relationships..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT statu..freinds_relationships..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT statu..freinds_relationships..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT id FR..micropost_likes..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="UPDATE micro..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="UPDATE micro..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT like_..microposts..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT users..users..." />
+            <marker date="1457346709465" expanded="true" signature="-1:-1" placeholder="SELECT id FR..micropost_likes..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profile.views.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.9078948">
+          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/long_text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19172932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457017232069" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1457017232069" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/_nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63909775">
+          <caret line="42" column="89" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/notifications.views.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5432331">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4473684">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <marker date="1457348959164" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/share_code.views.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9266917">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/micropost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63909775">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/memus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.884615">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.038462">
+          <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="130" />
+          <folding>
+            <marker date="1457348551796" expanded="true" signature="127:248" placeholder="SELECT notif..notifications..." />
+            <marker date="1457348551796" expanded="true" signature="1039:1486" placeholder="SELECT users..notifications..." />
+            <marker date="1457348551796" expanded="true" signature="3186:3242" placeholder="UPDATE notif..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accept_friend_resquest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.884615">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1457086920995" expanded="true" signature="242:461" placeholder="UPDATE frein..." />
+            <marker date="1457086920995" expanded="true" signature="632:745" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67105263">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <marker date="1457024453632" expanded="true" signature="324:380" placeholder="SELECT id , ..users..." />
+            <marker date="1457024453632" expanded="true" signature="638:684" placeholder="UPDATE users..." />
+            <marker date="1457024453632" expanded="true" signature="849:952" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
