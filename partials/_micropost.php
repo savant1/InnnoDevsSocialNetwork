@@ -9,7 +9,7 @@
              <i class="fa fa-clock-o"></i>
              <span class="timeago" title="<?= $micropost->created_at ?>"><?= $micropost->created_at ?></span>
              <?php if($micropost->user_id == get_session('user_id')): ?>
-                 <a class="btn btn-info btn-xs
+                 <a
                  data-confirm="Voulez-vous vraiment supprimer cette publication ?"
                   href="delete_micropost.php?id=<?= $micropost->m_id ?>">
                      <i class="fa fa-trash"></i>

@@ -15,6 +15,13 @@
                 <li>
                     <a href="list_users.php"><?= $menu['liste_user'][$_SESSION['locale']]; ?></a>
                 </li>
+                <li>
+                    <input type="search" id="searchbox" placeholder="<?= $menu['search'][$_SESSION['locale']]; ?>"  class="form-control">
+                    <div id="display-result">
+
+                    </div>
+                </li>
+                &nbsp;<i class="fa fa-spinner fa-spin" style="display: none;" id="spinner"></i>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="<?= set_active('index') ?> "> <a href="index.php"><?= $menu['acceuil'][$_SESSION['locale']]; ?></a></li>

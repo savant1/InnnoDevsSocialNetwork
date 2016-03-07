@@ -90,7 +90,7 @@
             $_SESSION['notification']['message'] = $message;
             $_SESSION['notification']['type'] = $type;
         }
-    }
+  }
 
 //function qui nous permet de faire les redirection
   if(!function_exists('redirect')){
@@ -215,7 +215,7 @@ if(!function_exists('remember_me')){
             'token' => hash('sha256',$token)
         ]);
 
-        // ceration d'un cookies de securite qui expire apres 14 jours soit 2 semaines
+        // ceration d'un cookies de securite qui expire apres 14 jours soit 2 semaines pour un peu plus de securite
         setcookie(
                     'auth',
                     base64_encode($selector).':'.base64_encode($token),

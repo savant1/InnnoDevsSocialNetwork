@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?familly=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 body{
     padding-top: 70px;
 }
@@ -207,7 +207,47 @@ li.have_notifs > a{
 }
 .not_seen{
      background-color: #1582f2;
-     }
+}
+#searchbox{
+    margin-top: 3px;
+    width: 250px;
+}
+
+#display-result{
+    width: 250px;
+    border-left: #dedede;
+    border-right: #dedede;
+    border-bottom: #dedede;
+    position: fixed;
+    display: none;
+}
+
+.display-box-user{
+    padding: 4px;
+    background-color: #fff;
+    position: relative;
+    color: #101010;
+    border-top: 1px solid #1582f2;
+    height: 60px;
+    font-size: 13px;
+}
+
+.display-box-user:hover a{
+    color: #101010;
+    text-decoration: none;
+}
+
+.display-box-user a{
+    color: #101010;
+    text-decoration: none;
+    display: block;
+}
+
+.display-box-user:hover{
+    background-color: #1582f2;
+    color: whitesmoke;
+    cursor: pointer;
+}
 /*
 ****************************************************************
 ****************************************************************

@@ -105,11 +105,39 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
 <script src="assets/js/jquery.livequery.min.js"></script>
 <script src="assets/js/jquery.timeago.js"></script>
 <script src="assets/js/jquery.timeago.fr.js"></script>
-<script src="libraries/sweetalert/sweetalert.min.js"></script>
+<script src="libaries/sweetalert/sweetalert.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $("span.timeago").timeago();
+
+//        $('[data-confirm]').on('click', function(e){
+//            e.preventDefault(); //Annuler l'action par défaut
+//            //Récupérer la valeur de l'attribut href
+//            var href = $(this).attr('href');
+//            //Récupérer la valeur de l'attribut data-confirm
+//            var message = $(this).data('confirm');
+//            //On aurait pu écrire aussi
+//            //var message = $(this).attr('data-confirm');
+//            //Afficher la popup SweetAlert
+//            alert(message);
+//            swal({
+//                title: "Êtes-vous sûr?",
+//                text: message, //Utiliser la valeur de data-confirm comme text
+//                type: "warning",
+//                showCancelButton: true,
+//                cancelButtonText: "Annuler",
+//                confirmButtonText: "Oui",
+//                confirmButtonColor: "#DD6B55"
+//            }, function(isConfirm) {
+//                if(isConfirm) {
+//                    //Si l'utilisateur clique sur Oui,
+//                    //Il faudra le rediriger l'utilisateur vers la page
+//                    //de suppression
+//                    window.location.href = href;
+//                }
+//            });
+//        });
     });
     $('span.timeago')
         .livequery(function(){
@@ -152,6 +180,8 @@ https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.3.5/parsley.min.js
         });
 
     });
+
+
 
     window.ParsleyValidator.setLocale('fr');
 </script>

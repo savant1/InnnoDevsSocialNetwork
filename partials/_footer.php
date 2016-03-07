@@ -10,11 +10,15 @@
 <script src="assets/js/jquery.livequery.min.js"></script>
 <script src="assets/js/jquery.timeago.js"></script>
 <script src="assets/js/jquery.timeago.fr.js"></script>
+<script src="assets/js/main.js"></script>
 <script type="text/javascript">
-    window.ParsleyValidator.setLocale('fr');
     $(document).ready(function() {
         $("span.timeago").timeago();
     });
+//        $('#searchbox').on('Keyup',function(){
+//        alert('hello');
+//    });
+    window.ParsleyValidator.setLocale('fr');
 </script>
 
 </body>

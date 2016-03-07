@@ -40,4 +40,5 @@ $menu = [
     'publier' => ['fr' => 'Publier' , 'en' => 'Publish', 'es' => 'Publicar', 'all' => 'Veröffentlichen'],
     'statut' => ['fr' => 'Statut' , 'en' => 'Statut', 'es' => 'Estatus', 'all' => 'Status'],
     'pub_mur' => ['fr' => 'Publier sur votre mur ...' , 'en' => 'Publish on your wall ...', 'es' => 'Publicar en su pared ...', 'all' => 'Veröffentlichen auf Ihrer Wand ...'],
+    'search' => ['fr' => 'Rechercher un utilisateur' , 'en' => 'Find User', 'es' => 'Encuentra usuario ...', 'all' => 'Benutzer suchen ...'],
 ];

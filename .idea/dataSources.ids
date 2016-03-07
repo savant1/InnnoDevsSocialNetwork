@@ -41,6 +41,7 @@
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="micropost_likes_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="micropost_likes_ibfk_2" columns="micropost_id" ref-table="microposts" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="micropost_likes_ibfk_3" columns="micropost_id" ref-table="microposts" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
       <index name="unique_id" unique="true" columns="id"/>
     </table>
     <table name="microposts" schema="" catalog="boom" type="TABLE">
@@ -52,6 +53,7 @@
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="microposts_ibfk_1" columns="user_id" ref-table="users" ref-schema="" ref-catalog="boom" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="micropost_likes_ibfk_2" table="micropost_likes" schema="" catalog="boom" columns="micropost_id"/>
+      <exported-key name="micropost_likes_ibfk_3" table="micropost_likes" schema="" catalog="boom" columns="micropost_id"/>
     </table>
     <table name="notifications" schema="" catalog="boom" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>

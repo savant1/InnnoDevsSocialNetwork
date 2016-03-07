@@ -6,14 +6,20 @@
       <w>actuel</w>
       <w>adresse</w>
       <w>affichage</w>
+      <w>afficher</w>
       <w>aiment</w>
       <w>aimez</w>
       <w>ajouter</w>
       <w>aleatoire</w>
       <w>alors</w>
       <w>amis</w>
+      <w>annuler</w>
+      <w>annulé</w>
       <w>apres</w>
       <w>attente</w>
+      <w>aucun</w>
+      <w>aurait</w>
+      <w>aussi</w>
       <w>awesone</w>
       <w>bcrypt</w>
       <w>bibliotheques</w>
@@ -26,6 +32,7 @@
       <w>cheks</w>
       <w>chemin</w>
       <w>colonne</w>
+      <w>comme</w>
       <w>comparaison</w>
       <w>compte</w>
       <w>concordent</w>
@@ -41,6 +48,7 @@
       <w>donc</w>
       <w>donnee</w>
       <w>donnees</w>
+      <w>défaut</w>
       <w>echapper</w>
       <w>emploi</w>
       <w>enregistrement</w>
@@ -52,6 +60,7 @@
       <w>existant</w>
       <w>facon</w>
       <w>faire</w>
+      <w>faudra</w>
       <w>femele</w>
       <w>fichier</w>
       <w>fonction</w>
@@ -63,10 +72,12 @@
       <w>github</w>
       <w>gravatar</w>
       <w>identifiant</w>
+      <w>imaginaire</w>
       <w>infos</w>
       <w>invalide</w>
       <w>jeton</w>
       <w>jours</w>
+      <w>keyup</w>
       <w>langues</w>
       <w>libaries</w>
       <w>liste</w>
@@ -89,9 +100,12 @@
       <w>profil</w>
       <w>publicar</w>
       <w>publier</w>
+      <w>rechercher</w>
+      <w>recherches</w>
       <w>recuperations</w>
       <w>recuperer</w>
       <w>redirige</w>
+      <w>rediriger</w>
       <w>remplir</w>
       <w>remplis</w>
       <w>renverser</w>
@@ -104,6 +118,7 @@
       <w>retournant</w>
       <w>retourner</w>
       <w>rien</w>
+      <w>récupérer</w>
       <w>securite</w>
       <w>selecteur</w>
       <w>selecteurs</w>
@@ -114,7 +129,11 @@
       <w>soumis</w>
       <w>statut</w>
       <w>styliser</w>
+      <w>succès</w>
+      <w>suppressions</w>
       <w>supprimer</w>
+      <w>supprimé</w>
+      <w>supprimée</w>
       <w>systeme</w>
       <w>tempom</w>
       <w>tempon</w>
@@ -125,6 +144,7 @@
       <w>trouve</w>
       <w>uploadify</w>
       <w>utilisateur</w>
+      <w>utiliser</w>
       <w>valeur</w>
       <w>valeurs</w>
       <w>verif</w>
@@ -137,6 +157,8 @@
       <w>voulloir</w>
       <w>vouloir</w>
       <w>vous</w>
+      <w>écrire</w>
+      <w>êtes</w>
     </words>
   </dictionary>
 </component>
